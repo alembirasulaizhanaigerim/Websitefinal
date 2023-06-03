@@ -1,0 +1,107 @@
+
+body{
+ 
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+
+  
+
+
+} 
+
+.header-line{
+  padding-top:50px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(115, 134, 149);
+}
+
+.nav-item{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 25px ;
+  margin-right: 25px;
+
+  transition:color 0.3s linear;
+
+}
+.nav-item:hover{
+  color: orange ;
+}
+
+.card {
+  border-right: 1px solid #FFFFFF;
+  padding-right:10px ;
+  height: 50px;
+}
+
+.num{
+  color:#fff;
+  text-decoration: none;
+  font-weight: 700;
+  transition:color 0.3s linear;
+
+}
+
+.num:hover{
+   color: #FF7400;
+}
+.phone-text{
+  font-size:14px;
+  font-weight: 400;
+  color:#fff;
+
+}
+
+.phone-holder{
+  display: flex;
+  align-items: center;
+}
+
+.button{
+  background-color: #FF7400;
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 18px ;
+  font-weight: 700;
+  transition: color 0.2s linear ;
+}
+.button:hover{
+  color: #6c3b14;
+}
+.header-button{
+  background-color: #FF7400;
+  padding: 14px 28px;
+  color: #fff;
+  font-size: 14px;
+  font-weight:700;
+  font-family: 'Montserrat', sans-serif;
+   font-family: 'Poppins', sans-serif;
+   text-decoration: none;
+   transition: background-color 0.3s linear;
+}
+
+.header-button:hover{
+  background-color: #4a2f19;
+
+}
+main {
+    width:100% !important;
+  margin:0 auto !important;
+  padding:0 !important;
+  overflow:hidden;
+}
+.header-button2{
+  background-color: #FF7400;
+  padding: 14px 28px;
+  color: #fff;
+  font-size: 30px;
+  font-weight:700;
+  font-family: 'Montserrat', sans-serif;
+   font-family: 'Poppins', sans-serif;
+   text-decoration: none;
+   transition: background-color 0.3s linear;
+}

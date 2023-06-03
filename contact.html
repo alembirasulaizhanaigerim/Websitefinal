@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="cont.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="contact-box">
+                <div class ="left"></div>
+                    <div class="right">
+                        <h2>Contact Us</h2>
+                        <form id="contact">
+                        <input type="text" id="name" class="field" placeholder="Your Name">
+                        <input type="email" id="email" class="field" placeholder="Your Email">
+                        <input type="text" id="phone" class="field" placeholder="Your Phone">
+                        <textarea class="field area" id="massage" placeholder="Message"></textarea>
+                        <button class="btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <script>
+                
+                class User {
+                  constructor(name, email, phone, massage) {
+                    this.name = name;
+                    this.email = email;
+                    this.phone = phone;
+                    this.massage = massage;
+                  }
+                }
+            
+                
+                const form = document.getElementById('contact');
+                form.addEventListener('submit', function(event) {
+                  event.preventDefault();
+            
+                
+                  const name = document.getElementById('name').value;
+                  const email = document.getElementById('email').value;
+                  const phone = document.getElementById('phone').value;
+                  const massage = document.getElementById('massage').value;
+            
+                 
+                  const newUser = new User(name, email, phone, massage);
+            
+                  
+                  console.log(newUser); 
+            
+                  
+                  form.reset();
+                });
+              </script>
+    </body>
+</html>
